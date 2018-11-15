@@ -1,0 +1,18 @@
+try { // I am using a try-catch here since I need to get more knowledge about how you input a code that is able to take in letters as well as numbers.
+        Console.WriteLine("How old are you?");
+        int age = Convert.ToInt32(Console.ReadLine()); //Asks for the users age, this might be used in +18 games or mature content.
+        if (age < 18) //Start a short if-else. For longer once, we could create a switch statement instead.
+        {
+            Console.WriteLine("I am sorry, but you are to young to enter this site.");
+        }
+        else if (age >= 18)
+        {
+            Console.WriteLine("Welcome!");
+        }
+    }
+    catch (Exception)
+    {
+        Console.WriteLine("Incorect input. Please use a valid number.");
+    }
+
+    Console.ReadLine();
